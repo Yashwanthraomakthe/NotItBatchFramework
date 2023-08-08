@@ -9,7 +9,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import Config.properties;
+import Config.InputData;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class GuruHomePageTest {
@@ -18,17 +18,15 @@ public class GuruHomePageTest {
 	@BeforeMethod
 	public void setUp() throws IOException {
 		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		//driver.get("https://demo.guru99.com/V1/index.php");
-		properties p = new properties();
-		driver.get(p.getAppURL());
+		driver = new ChromeDriver();		
+		driver.get(InputData.getAppURL());
 
 	}
 
 	@Test
-	public void LoginTest() {
-		driver.findElement(By.name("uid")).sendKeys("mngr520082");
-		driver.findElement(By.name("password")).sendKeys("YvuqEve");
+	public void LoginTest() throws IOException {		
+		driver.findElement(By.name("uid")).sendKeys(InputData.getUsername());
+		driver.findElement(By.name("password")).sendKeys(InputData.getpassword());
 		driver.findElement(By.name("btnLogin")).click();
 		
 
