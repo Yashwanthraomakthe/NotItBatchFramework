@@ -1,19 +1,14 @@
 package Config;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-import org.testng.annotations.Test;
-
 public class InputData {
 
-	@Test
-	public static String getAppURL() throws IOException {
-
-		InputStream input = new FileInputStream(
+	public String getAppURL() throws IOException {
+		FileInputStream input = new FileInputStream(
 				"F:\\OnlineClasses\\AutomationmorningBatch\\POMFramework\\src\\test\\java\\Config\\config.properties");
 		Properties prop = new Properties();
 		prop.load(input);
@@ -29,7 +24,7 @@ public class InputData {
 				"F:\\OnlineClasses\\AutomationmorningBatch\\POMFramework\\src\\test\\java\\Config\\config.properties");
 		Properties prop = new Properties();
 		prop.load(input);
-		String username = prop.getProperty("username");
+		String username = prop.getProperty("username");		
 		return username;
 
 	}

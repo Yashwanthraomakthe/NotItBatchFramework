@@ -10,25 +10,33 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import Config.InputData;
+import PageObjects.LoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class GuruHomePageTest {
 
 	WebDriver driver;
+
 	@BeforeMethod
 	public void setUp() throws IOException {
 		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();		
-		driver.get(InputData.getAppURL());
+		driver = new ChromeDriver();
+		InputData input = new InputData();
+		driver.get(input.getAppURL());
 
 	}
 
 	@Test
-	public void LoginTest() throws IOException {		
-		driver.findElement(By.name("uid")).sendKeys(InputData.getUsername());
-		driver.findElement(By.name("password")).sendKeys(InputData.getpassword());
-		driver.findElement(By.name("btnLogin")).click();
-		
+	public void LoginTest() throws IOException {
+
+		LoginPage lp = new LoginPage(driver);
+		lp.setUsername(InputData.getUsername());
+		lp.setPassword(InputData.getpassword());
+		lp.clickLogin();
+
+		// driver.findElement(By.name("uid")).sendKeys(InputData.getUsername());
+		// driver.findElement(By.name("password")).sendKeys(InputData.getpassword());
+		// driver.findElement(By.name("btnLogin")).click();
 
 	}
 
