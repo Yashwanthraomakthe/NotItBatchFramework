@@ -11,10 +11,16 @@ public class HomePage {
 
 	WebDriver driver = null;
 
-	By link_newCustomer = By.linkText("New Customer");
+	By link_myInfo = By.linkText("My Info");
+	By lable_Dashboard = By.className("oxd-topbar-header-breadcrumb");
 	
-	public void clickNewCustomer() {
-		driver.findElement(link_newCustomer).click();
+	public void clickMyInfo() {
+		driver.findElement(link_myInfo).click();
+	}
+	
+	public String getDashboardText() {
+		String lable = driver.findElement(lable_Dashboard).getText();
+		return lable;
 	}
 
 }

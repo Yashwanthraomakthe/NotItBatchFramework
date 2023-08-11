@@ -11,9 +11,9 @@ public class LoginPage {
 
 	WebDriver driver = null;
 
-	By textbox_username = By.name("uid");
+	By textbox_username = By.name("username");
 	By textbox_password = By.name("password");
-	By button_login = By.name("btnLogin");
+	By button_login = By.xpath("//button[@type='submit']");
 
 	public void setUsername(String username) {
 		driver.findElement(textbox_username).sendKeys(username);
