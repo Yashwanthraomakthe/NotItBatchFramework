@@ -5,6 +5,7 @@
     <classes>
       <class name="TestCases.UpdateMyInfo"/>
       <class name="TestCases.LoginTest"/>
+      <class name="TestCases.HomePageDashBoardTextValidation"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

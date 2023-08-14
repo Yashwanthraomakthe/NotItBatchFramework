@@ -50,6 +50,30 @@ public class UpdateMyInfo {
 		Thread.sleep(2000);
 
 	}
+	
+
+	@Test
+	public void verifyMyInfoHeaderTest() throws IOException, InterruptedException {
+
+		LoginPage lp = new LoginPage(driver);
+		lp.setUsername(InputData.getUsername());
+		lp.setPassword(InputData.getpassword());
+		lp.clickLogin();
+
+		Thread.sleep(2000);
+
+		HomePage hp = new HomePage(driver);
+		hp.clickMyInfo();
+		Thread.sleep(2000);
+		
+		Myinfo mi = new Myinfo(driver);
+		String actualHeader = mi.getMyInfoHeader();
+		String expectedHeader = "PIM";
+		Assert.assertEquals(actualHeader, expectedHeader);
+		Assert.assertEquals(actualHeader, "PIM", "verifing someeeeeeeeeeeeeeeeeeeeeeeeee");
+	
+
+	}
 
 	@AfterMethod
 	public void tearDown() {

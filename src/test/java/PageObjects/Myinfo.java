@@ -13,6 +13,7 @@ public class Myinfo {
 
 	By text_firstname = By.name("firstName");
 	By text_empID = By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[2]/div[1]/div[1]/div/div[2]/input");
+	By label_MyInfoHeader=By.xpath("//h6[normalize-space()='PIM']");
 	
 	public void setFirstname() {
 		driver.findElement(text_firstname).clear();
@@ -22,6 +23,12 @@ public class Myinfo {
 	public void setemployeeId() {
 		driver.findElement(text_empID).clear();
 		driver.findElement(text_empID).sendKeys("12345");
+	}
+	
+	public String getMyInfoHeader() {
+		String myinfo = driver.findElement(label_MyInfoHeader).getText();
+		return myinfo;
+		
 	}
 
 }

@@ -36,6 +36,7 @@ public class HomePageDashBoardTextValidation {
 		lp.setUsername(InputData.getUsername());
 		lp.setPassword(InputData.getpassword());
 		lp.clickLogin();
+	
 
 		Thread.sleep(2000);
 
@@ -44,6 +45,24 @@ public class HomePageDashBoardTextValidation {
 		String expectedText = "Dashboard";
 		Assert.assertEquals(actualText, expectedText);
 		Thread.sleep(2000);
+		
+
+	}
+
+	@Test
+	public void verifyNumberOfPanals() throws IOException, InterruptedException {
+
+		LoginPage lp = new LoginPage(driver);
+		lp.setUsername(InputData.getUsername());
+		lp.setPassword(InputData.getpassword());
+		lp.clickLogin();
+		Thread.sleep(2000);
+
+		HomePage hp = new HomePage(driver);
+		int actualPanels = hp.getNumberOfPanels();
+		int expectedPanels = 7;
+
+		Assert.assertEquals(actualPanels, expectedPanels);
 
 	}
 

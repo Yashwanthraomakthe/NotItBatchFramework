@@ -1,25 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-11T09:55:45 IST" name="Default suite" finished-at="2023-08-11T09:56:16 IST" duration-ms="30510">
+  <suite started-at="2023-08-14T09:48:19 IST" name="Suite" finished-at="2023-08-14T09:50:25 IST" duration-ms="126437">
     <groups>
     </groups>
-    <test started-at="2023-08-11T09:55:45 IST" name="Default test" finished-at="2023-08-11T09:56:16 IST" duration-ms="30510">
-      <class name="TestCases.UpdateMyInfo">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.UpdateMyInfo@72057ecf]" started-at="2023-08-11T09:55:45 IST" name="setUp" finished-at="2023-08-11T09:56:04 IST" duration-ms="18930" status="PASS">
+    <test started-at="2023-08-14T09:48:19 IST" name="Test" finished-at="2023-08-14T09:50:25 IST" duration-ms="126437">
+      <class name="TestCases.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.LoginTest@79924b]" started-at="2023-08-14T09:49:12 IST" name="setUp" finished-at="2023-08-14T09:49:29 IST" duration-ms="17498" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="clickmyInfoTest()[pri:0, instance:TestCases.UpdateMyInfo@72057ecf]" started-at="2023-08-11T09:56:04 IST" name="clickmyInfoTest" finished-at="2023-08-11T09:56:15 IST" duration-ms="10997" status="PASS">
+        <test-method signature="LoginTest()[pri:0, instance:TestCases.LoginTest@79924b]" started-at="2023-08-14T09:49:29 IST" name="LoginTest" finished-at="2023-08-14T09:49:31 IST" duration-ms="1847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.LoginTest@79924b]" started-at="2023-08-14T09:49:31 IST" name="tearDown" finished-at="2023-08-14T09:49:32 IST" duration-ms="641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.LoginTest@79924b]" started-at="2023-08-14T09:49:32 IST" name="setUp" finished-at="2023-08-14T09:49:47 IST" duration-ms="15039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTitleTest()[pri:0, instance:TestCases.LoginTest@79924b]" started-at="2023-08-14T09:49:47 IST" name="verifyTitleTest" finished-at="2023-08-14T09:49:47 IST" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.LoginTest@79924b]" started-at="2023-08-14T09:49:47 IST" name="tearDown" finished-at="2023-08-14T09:49:48 IST" duration-ms="557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.LoginTest -->
+      <class name="TestCases.UpdateMyInfo">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.UpdateMyInfo@402bba4f]" started-at="2023-08-14T09:48:19 IST" name="setUp" finished-at="2023-08-14T09:48:37 IST" duration-ms="17889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clickmyInfoTest()[pri:0, instance:TestCases.UpdateMyInfo@402bba4f]" started-at="2023-08-14T09:48:37 IST" name="clickmyInfoTest" finished-at="2023-08-14T09:48:49 IST" duration-ms="12169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickmyInfoTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.UpdateMyInfo@72057ecf]" started-at="2023-08-11T09:56:15 IST" name="tearDown" finished-at="2023-08-11T09:56:16 IST" duration-ms="526" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.UpdateMyInfo@402bba4f]" started-at="2023-08-14T09:48:49 IST" name="tearDown" finished-at="2023-08-14T09:48:49 IST" duration-ms="474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.UpdateMyInfo@402bba4f]" started-at="2023-08-14T09:48:49 IST" name="setUp" finished-at="2023-08-14T09:49:04 IST" duration-ms="15232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyMyInfoHeaderTest()[pri:0, instance:TestCases.UpdateMyInfo@402bba4f]" started-at="2023-08-14T09:49:04 IST" name="verifyMyInfoHeaderTest" finished-at="2023-08-14T09:49:12 IST" duration-ms="7056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMyInfoHeaderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.UpdateMyInfo@402bba4f]" started-at="2023-08-14T09:49:12 IST" name="tearDown" finished-at="2023-08-14T09:49:12 IST" duration-ms="433" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestCases.UpdateMyInfo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="TestCases.HomePageDashBoardTextValidation">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.HomePageDashBoardTextValidation@7b9a4292]" started-at="2023-08-14T09:49:48 IST" name="setUp" finished-at="2023-08-14T09:50:01 IST" duration-ms="13597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clickmyInfoTest()[pri:0, instance:TestCases.HomePageDashBoardTextValidation@7b9a4292]" started-at="2023-08-14T09:50:01 IST" name="clickmyInfoTest" finished-at="2023-08-14T09:50:06 IST" duration-ms="4805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickmyInfoTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.HomePageDashBoardTextValidation@7b9a4292]" started-at="2023-08-14T09:50:06 IST" name="tearDown" finished-at="2023-08-14T09:50:06 IST" duration-ms="391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.HomePageDashBoardTextValidation@7b9a4292]" started-at="2023-08-14T09:50:06 IST" name="setUp" finished-at="2023-08-14T09:50:21 IST" duration-ms="14128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyNumberOfPanals()[pri:0, instance:TestCases.HomePageDashBoardTextValidation@7b9a4292]" started-at="2023-08-14T09:50:21 IST" name="verifyNumberOfPanals" finished-at="2023-08-14T09:50:25 IST" duration-ms="4045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNumberOfPanals -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.HomePageDashBoardTextValidation@7b9a4292]" started-at="2023-08-14T09:50:25 IST" name="tearDown" finished-at="2023-08-14T09:50:25 IST" duration-ms="488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.HomePageDashBoardTextValidation -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
